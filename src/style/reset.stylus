@@ -1,0 +1,39 @@
+@import './removeDefaultApperance.stylus';
+
+html {
+    font-size: medium;
+    font-family: 'Microsoft YaHei UI', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', system-ui, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji, math, fangsong;
+    line-height: 2;
+}
+
+html, body {
+    margin: 0;
+}
+
+button {
+    background-color: white;
+}
+
+/*
+ *  input 行高问题很恶心，你无法得到一个等于字体大小的行高，在不同的浏览器上的值也不同，强行设置也不行(eg:f-z 16px,l-h 1,firefox l-h 19.25px chrome 18px)
+ *  默认normal值为1.2左右，且与字体相关，所以建议行高大于1.3
+ *  input有的元素为content-box有的为border-box，我本身就不喜欢border，所以直接让border为none
+ *  对于img  textarea 块级元素
+ */
+input, button, textarea, select, option, label {
+    border: none;
+    border-radius: 0.2em;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+input, button, textarea, select, option {
+    box-shadow: 0 0px 0px 1px rgba(24, 40, 35, 0.06) inset;
+    padding: 0 0.25em;
+    margin: 0 0.25em;
+}
+
+img {
+    vertical-align: top;
+    display: inline-block;
+}
