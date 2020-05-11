@@ -14,7 +14,6 @@
       <option>2</option>
     </select>
     <div>
-      
       <input name="name" type="radio" />输入
     </div>
     <div>
@@ -22,8 +21,14 @@
       <input name="name" type="checkbox" />
     </div>
     <div>
-      <input name="name" type="checkbox" class="switch" />
-开关
+      <input name="name" type="checkbox" class="switch" v-model="show" />
+      开关
+    </div>
+
+    <div class="dropdown" v-show="show">
+      <h2>你好世界</h2>
+      <h2>大家好菜是真的好</h2>
+      <h2>天天向上</h2>
     </div>
 
     <div>1</div>
@@ -33,6 +38,11 @@
 <script>
 export default {
   name: "Home",
-  components: {}
+  components: {},
+  data() {
+    return {
+      show: false
+    };
+  }
 };
 </script>
