@@ -11,7 +11,7 @@ input[type=radio] {
         transition-duration: var(--std-animation-duration);
         transition-timing-function: var(--std-animation-timing-function);
         border-radius: 0.5em;
-        background-color: gray;
+        background-color: lightgray;
     }
 
     &:checked::before {
@@ -32,7 +32,7 @@ input[type=checkbox] {
         transition-duration: var(--std-animation-duration);
         transition-timing-function: var(--std-animation-timing-function);
         border-radius: 0.3em;
-        background-color: gray;
+        background-color: lightgray;
     }
 
     &:checked::before {
@@ -55,7 +55,7 @@ input[type=checkbox] {
             transition-duration: var(--std-animation-duration);
             transition-timing-function: var(--std-animation-timing-function);
             border-radius: 0.5em;
-            background-color: gray;
+            background-color: lightgray;
         }
 
         &::after {
@@ -63,18 +63,19 @@ input[type=checkbox] {
             cursor: pointer;
             vertical-align: middle;
             display: inline-block;
-            height: 0.7em;
-            width: 0.7em;
+            width: 1.1em;
+            height: @width;
             transition-duration: var(--std-animation-duration);
             transition-timing-function: var(--std-animation-timing-function);
-            border-radius: 0.35em;
-            background-color: white;
-            transform: translateX(-1.35em);
+            border-radius: (@width / 2);
+            background-color: gray;
+            transform: translateX(-1.6em);
         }
 
         &:checked::after {
             background-color: lightgreen;
-            transform: translateX(-0.85em);
+
+            transform: translateX(-1em);
         }
     }
 }
