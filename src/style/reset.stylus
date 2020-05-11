@@ -14,6 +14,12 @@ button {
     background-color: white;
 }
 
+select, option, button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 /*
  *  input 行高问题很恶心，你无法得到一个等于字体大小的行高，在不同的浏览器上的值也不同，强行设置也不行(eg:f-z 16px,l-h 1,firefox l-h 19.25px chrome 18px)
  *  默认normal值为1.2左右，且与字体相关，所以建议行高大于1.3
