@@ -3,7 +3,7 @@
 html {
     font-size: medium;
     font-family: 'Microsoft YaHei UI', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', system-ui, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji, math, fangsong;
-    line-height: 2;
+    line-height: var(--std-line-height);
 }
 
 html, body {
@@ -28,15 +28,15 @@ select, option, button {
  */
 input, button, textarea, select, option, label {
     border: none;
-    border-radius: 0.2em;
-    font-size: 1rem;
-    line-height: 1.5;
+    border-radius: var(--std-border-radius);
+    font-size: var(--std-font-size);
+    line-height: var(--std-inline-line-height);
 }
 
 input, button, textarea, select, option {
     box-shadow: 0 0px 0px 1px rgba(24, 40, 35, 0.06) inset;
-    padding: 0 0.25em;
-    margin: 0 0.25em;
+    padding: 0 var(--std-padding);
+    margin: 0 var(--std-margin);
 }
 
 img {

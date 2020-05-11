@@ -1,0 +1,8 @@
+:root {
+    --std-font-size: 1rem;
+    --std-line-height: 2;
+    --std-inline-line-height: 1.5;
+    --std-margin: 0.25em;
+    --std-padding: 0.25em;
+    --std-border-radius: 0.25em;
+}
