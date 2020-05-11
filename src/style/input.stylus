@@ -15,7 +15,7 @@ input[type=radio] {
     }
 
     &:checked::before {
-        background-color: lightgreen;
+        background-color: yellowgreen;
     }
 }
 
@@ -36,7 +36,7 @@ input[type=checkbox] {
     }
 
     &:checked::before {
-        background-color: lightgreen;
+        background-color: yellowgreen;
     }
 }
 
@@ -58,7 +58,7 @@ input[type=checkbox] {
             background-color: lightgray;
         }
 
-        $width = 1em;
+        $width = 1.1em;
 
         &::after {
             content: '';
@@ -74,12 +74,8 @@ input[type=checkbox] {
             transform: translateX(-(1.5em + @width) / 2 - (1.5em - @width) / 2 + (1em - @width) / 2);
         }
 
-        &:checked::before {
-            background-color: steelblue;
-        }
-
         &:checked::after {
-            background-color: lightgreen;
+            background-color: yellowgreen;
             transform: translateX(-(1.5em + $width) / 2 + (1.5em - $width) / 2 - (1em - $width) / 2);
         }
     }
