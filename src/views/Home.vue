@@ -13,11 +13,18 @@
       <option>3</option>
       <option>2</option>
     </select>
-    <input name="name" type="radio" />
-    <input name="name" type="radio" />输入
-    <input name="name" type="checkbox" />
-    <input name="name" type="checkbox" class="switch"/>
-
+    <div>
+      
+      <input name="name" type="radio" />输入
+    </div>
+    <div>
+      <input name="name" type="checkbox" />
+      <input name="name" type="checkbox" />
+    </div>
+    <div>
+      <input name="name" type="checkbox" class="switch" />
+开关
+    </div>
 
     <div>1</div>
   </div>

@@ -41,8 +41,10 @@ input[type=checkbox] {
 }
 
 input[type=checkbox] {
-    box-shadow: none;
     &.switch {
+        /* 去掉after圆圈的宽度 */
+        margin-right: -0.7em;
+
         &::before {
             content: '';
             cursor: pointer;
