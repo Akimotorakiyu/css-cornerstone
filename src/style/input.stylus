@@ -15,7 +15,7 @@ input[type=radio] {
     }
 
     &:checked::before {
-        background-color: green;
+        background-color: lightgreen;
     }
 }
 
@@ -36,6 +36,43 @@ input[type=checkbox] {
     }
 
     &:checked::before {
-        background-color: green;
+        background-color: lightgreen;
+    }
+}
+
+input[type=checkbox] {
+    box-shadow: none;
+    &.switch {
+        &::before {
+            content: '';
+            cursor: pointer;
+            vertical-align: middle;
+            display: inline-block;
+            height: 1em;
+            width: 1.5em;
+            transition-duration: $default-transition-duration s;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            border-radius: 0.5em;
+            background-color: gray;
+        }
+
+        &::after {
+            content: '';
+            cursor: pointer;
+            vertical-align: middle;
+            display: inline-block;
+            height: 0.7em;
+            width: 0.7em;
+            transition-duration: 0.2s;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            border-radius: 0.35em;
+            background-color: white;
+            transform: translateX(-1.35em);
+        }
+
+        &:checked::after {
+            background-color: lightgreen;
+            transform: translateX(-0.85em);
+        }
     }
 }

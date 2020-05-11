@@ -16,6 +16,8 @@
     <input name="name" type="radio" />
     <input name="name" type="radio" />输入
     <input name="name" type="checkbox" />
+    <input name="name" type="checkbox" class="switch"/>
+
 
     <div>1</div>
   </div>
