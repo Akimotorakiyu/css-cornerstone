@@ -29,11 +29,17 @@ select, option, button {
 input, button, textarea, select, option, label {
     border: none;
     border-radius: var(--std-border-radius);
-    font-size: var(--std-font-size);
+    font-size: inherit;
     line-height: var(--std-inline-line-height);
 }
 
 input, button, textarea, select, option {
+    box-shadow: 0 0px 0px 1px rgba(24, 40, 35, 0.06) inset;
+    padding: 0 var(--std-padding);
+    margin: 0 var(--std-margin);
+}
+
+em, i, strong, cite, code {
     box-shadow: 0 0px 0px 1px rgba(24, 40, 35, 0.06) inset;
     padding: 0 var(--std-padding);
     margin: 0 var(--std-margin);

@@ -16,6 +16,12 @@ input, button, textarea, select, option {
     padding: 0;
 }
 
+/* 火狐神奇的去掉focus虚线的方式 */
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
 ul, ol {
     list-style: none;
     /* - -" */
