@@ -58,24 +58,29 @@ input[type=checkbox] {
             background-color: lightgray;
         }
 
+        $width = 1em;
+
         &::after {
             content: '';
             cursor: pointer;
             vertical-align: middle;
             display: inline-block;
-            width: 1.1em;
+            width: $width;
             height: @width;
             transition-duration: var(--std-animation-duration);
             transition-timing-function: var(--std-animation-timing-function);
             border-radius: (@width / 2);
             background-color: gray;
-            transform: translateX(-1.6em);
+            transform: translateX(-(1.5em + @width) / 2 - (1.5em - @width) / 2 + (1em - @width) / 2);
+        }
+
+        &:checked::before {
+            background-color: steelblue;
         }
 
         &:checked::after {
             background-color: lightgreen;
-
-            transform: translateX(-1em);
+            transform: translateX(-(1.5em + $width) / 2 + (1.5em - $width) / 2 - (1em - $width) / 2);
         }
     }
 }
