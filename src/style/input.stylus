@@ -31,7 +31,7 @@ input[type=checkbox] {
         width: 1em;
         transition-duration: $default-transition-duration s;
         transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-        border-radius: 0.5em;
+        border-radius: 0.3em;
         background-color: gray;
     }
 

@@ -15,6 +15,8 @@
     </select>
     <input name="name" type="radio" />
     <input name="name" type="radio" />输入
+    <input name="name" type="checkbox" />
+
     <div>1</div>
   </div>
 </template>
