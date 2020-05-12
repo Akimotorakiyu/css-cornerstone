@@ -1,4 +1,4 @@
 @import './reset.stylus';
-@import './cssVar.stylus.stylus';
+@import './cssVar.stylus';
 @import './input.stylus';
 @import './dropdown.stylus';
