@@ -15,6 +15,7 @@
     </select>
     <div>
       <input name="name" type="radio" />输入
+       <input name="name" type="radio" /> <input name="name" type="radio" />输入
     </div>
     <div>
       <input name="name" type="checkbox" />
