@@ -39,7 +39,8 @@ input, button, textarea, select, option {
     margin: 0 var(--std-margin);
 }
 
-em, i, strong, cite, code {
+/* i 作为内容使用的为多，不当作行内容器 */
+em, strong, cite, code {
     box-shadow: 0 0px 0px 1px rgba(24, 40, 35, 0.06) inset;
     padding: 0 var(--std-padding);
     margin: 0 var(--std-margin);
@@ -48,4 +49,13 @@ em, i, strong, cite, code {
 img {
     vertical-align: top;
     display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+
+    tr {
+        border-bottom: 1px solid #ebeef5;
+    }
 }
