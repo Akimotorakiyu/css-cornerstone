@@ -21,12 +21,10 @@ input[type=radio] {
     /* 为悬浮和按下添加细节 */
     &:hover::before {
         filter: invert(8%);
-        transition: filter 0.2s ease-in;
     }
 
     &:active::before {
         filter: invert(16%);
-        transition: filter 0.1s ease-out;
     }
 }
 
@@ -53,12 +51,10 @@ input[type=checkbox] {
     /* 为悬浮和按下添加细节 */
     &:hover::before {
         filter: invert(8%);
-        transition: filter 0.2s ease-in;
     }
 
     &:active::before {
         filter: invert(16%);
-        transition: filter 0.1s ease-out;
     }
 }
 
@@ -102,14 +98,20 @@ input[type=checkbox] {
         }
 
         /* 为悬浮和按下添加细节 */
+        &:hover::before {
+            filter: invert(8%);
+        }
+
+        &:active::before {
+            filter: invert(16%);
+        }
+
         &:hover::after {
             filter: invert(8%);
-            transition: filter 0.2s ease-in;
         }
 
         &:active::after {
             filter: invert(16%);
-            transition: filter 0.1s ease-out;
         }
     }
 }
